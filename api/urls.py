@@ -13,4 +13,6 @@ urlpatterns = [
     path('order/',views.OrderAPI.as_view(),name='order'),
     path('order/<int:pk>/',views.OrderDetailAPI.as_view(),name='order-detail'),
     path('search/',views.SearchAndFilterAPI.as_view(),name='search'),
+    path('provider-orders/',views.ProviderOrderAPI.as_view(),name='provider-orders'),
+    path('recommendations/',views.get_food_recommendations,name='recommendations'),
 ]
